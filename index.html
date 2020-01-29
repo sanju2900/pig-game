@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        
+        <title>Roll Game</title>
+    </head>
+
+    <body>
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0"><b>Player 1</b></div>
+                <div class="player-score" id="score-0">43</div>
+              <!--  <div class="player-0-rolled-1"><h3><em>sorry! you rolled 1</em></h3></div>-->
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">11</div>
+                </div>
+            </div>
+             <div class="rules-panel" style="display: none">
+                <h3>goal</h3>
+                <p>be the first player to reach 100 points</p>
+            </div>
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1"><b>Player 2</b></div>
+                <div class="player-score" id="score-1">72</div>
+             <!--   <div class="player-1-rolled-1"><h3><em>oops! you rolled 1</em></h3></div>-->
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+                <div class="rules-panel" style="display: none">
+                <h3>gameplay</h3>
+                <p>on a turn,a player rolls the die repeatedly until either:</p>
+                <li>1 is rolled</li>
+                <li>the player choose to hold(stop rolling)</li>
+                <br>
+                <p>if the play choose hold then all the point rolled during that turned are added to his or her score</p>
+               </div>
+
+            </div>
+            <button class="btn-rules"><i class="ion-ios-compose-outline icon color-0"></i>Rules</button>
+            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+            <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+            
+            <input type="text" placeholder="Final score" class="final-score">
+            
+            <img src="dice-1.png" alt="Dice" class="dice" id="dice-1">
+            
+        </div>
+        
+        <!--<script src="app.js"></script>-->
+        <script src="app.js"></script>
+    </body>
